@@ -2,26 +2,26 @@
 This is work in progress
 
 ## BOM
-| Identifier | Type/Value | Quantity | Supplier Id | Supplier | Comment |
+| Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
 | ---        | ---        | ---      | ---         | ---      | ---     |
-| R1, R2, R3, R4 | 33 Ω | 4 | SMD-0603 33 | [Reichelt][reichelt] |
-| R12, R13 | 1 kΩ | 2 | SMD-0603 1,00K | [Reichelt][reichelt] |
-| C1, C2, C13, C14 | 22 pF | 4 | NPO-G0603 22P | [Reichelt][reichelt] |
-| C7, C8 | 10 nF | 4 | X7R-G0603 10N | [Reichelt][reichelt] |
-| C18, C19, C20, C21 | 100 nF | 4 | X7R-G0603 100N | [Reichelt][reichelt] |
-| C3, C5, C6, C10, C11 | 10 µF | 5 | X5R-G0603 10/6 | [Reichelt][reichelt] |
-| L1 | Ferrite Bead | 1 | BLM18AG 121 | [Reichelt][reichelt] |
-| Y1 | 8MHz | 1 | 32,768 PGD-9 | [Reichelt][reichelt] |
-| Y2 | 32kHz | 1 | 32,768 PGD-9 | [Reichelt][reichelt] |
-| LED1 | LED green | 1 | LG L29K | [Reichelt][reichelt] |
-| LED2 | LED white | 1 | LW L283 | [Reichelt][reichelt] |
-| BAT1 | Batteryholder | 1 | 855-S8411-45R | [Mouser][mouser] |
-| BAT | CR 1220 | 1 | CR 1220 VAR | [Reichelt][reichelt] |
-| SW1 | Tact Switch Top | 1 | Tact Switches Micro SMD | [Aliexpress][aliexpress] |
-| J2 | USB Jack | 1 | USB BWM SMD | [Reichelt][reichelt] |
-| IC1 | STM32F103C8T6 | 1 | STM32 F103C8T6 | [Reichelt][reichelt] |
-| IC2, IC6 | LP2985 | 1 | LP 2985 IM5-3,3 | [Reichelt][reichelt] |
-| IC3, IC4 | USBLC6-2 | 1 | 511-USBLC6-2SC6 | [Mouser][mouser] |
+| R1, R2, R3, R4 | 33 Ω | 4 | SMD-0603 33 |  |
+| R12, R13 | 1 kΩ | 2 | SMD-0603 1,00K |  |
+| C1, C2, C13, C14 | 22 pF | 4 | NPO-G0603 22P |  |
+| C7, C8 | 10 nF | 4 | X7R-G0603 10N |  |
+| C18, C19, C20, C21 | 100 nF | 4 | X7R-G0603 100N |  |
+| C3, C5, C6, C10, C11 | 10 µF | 5 | X5R-G0603 10/6 |  |
+| L1 | Ferrite Bead | 1 | BLM18AG 121 |  |
+| Y1 | 8MHz | 1 | 32,768 PGD-9 |  |
+| Y2 | 32kHz | 1 | 32,768 PGD-9 |  |
+| LED1 | LED green | 1 | LG L29K |  |
+| LED2 | LED white | 1 | LW L283 | |
+| BAT1 | Batteryholder | 1 | - |  |
+| BAT | CR 1220 | 1 | CR 1220 VAR | |
+| SW1 | Tact Switch Top | 1 | - | - |
+| J2 | USB Jack | 1 | USB BWM SMD |  |
+| IC1 | STM32F103C8T6 | 1 | STM32 F103C8T6 |  |
+| IC2, IC6 | LP2985 | 1 | LP 2985 IM5-3,3 |  |
+| IC3, IC4 | USBLC6-2 | 1 | - |  |
 
 ## Power supply - BOM
 | Identifier | Type/Value | Quantity | Supplier Id | Supplier | Comment |
