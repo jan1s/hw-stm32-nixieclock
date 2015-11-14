@@ -3,8 +3,8 @@ This is work in progress
 
 ## BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
-| ---        | ---        | ---      | ---         | ---      | ---     |
-| R1, R2, R3, R4 | 33 Ω | 4 | SMD-0603 33 |  |
+| :---        | :---        | :---      | :---         | :---      | :---     |
+| R1, R2, R3, R4 | 33 Ω | 4 | SMD-0603 33 | 311-33GRCT-ND |
 | R12, R13 | 1 kΩ | 2 | SMD-0603 1,00K |  |
 | C1, C2, C13, C14 | 22 pF | 4 | NPO-G0603 22P |  |
 | C7, C8 | 10 nF | 4 | X7R-G0603 10N |  |
@@ -54,5 +54,6 @@ This is work in progress
 | GL1, GL2 | Neon Bulb | 2 | GLIMMLAMPE | [Reichelt][reichelt] |
 
 [reichelt]: http://www.reichelt.de
+[digikey]: http://www.digikey.de
 [mouser]: http://mouser.com
 [aliexpress]: http://www.aliexpress.com
