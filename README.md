@@ -5,7 +5,7 @@ This is work in progress
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
 | :---        | :---        | :---      | :---         | :---      | :---     |
 | R1, R2, R3, R4 | 33 Ω | 4 | SMD-0603 33 | 311-33GRCT-ND |
-| R12, R13 | 1 kΩ | 2 | SMD-0603 1,00K |  |
+| R12, R13 | 1 kΩ | 2 | SMD-0603 1,00K | 311-1.0KGRCT-ND |
 | C1, C2, C13, C14 | 22 pF | 4 | NPO-G0603 22P |  |
 | C7, C8 | 10 nF | 4 | X7R-G0603 10N |  |
 | C18, C19, C20, C21 | 100 nF | 4 | X7R-G0603 100N |  |
@@ -24,10 +24,10 @@ This is work in progress
 | IC3, IC4 | USBLC6-2 | 1 | - |  |
 
 ## Power supply - BOM
-| Identifier | Type/Value | Quantity | Supplier Id | Supplier | Comment |
+| Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
 | ---        | ---        | ---      | ---         | ---      | ---     |
 | R23 | 0.01 Ω | 1 | 603-RL1206JR-070R01L | [Mouser][mouser] |
-| R18 | 82 kΩ | 1 | SMD-0603 82K | [Reichelt][reichelt] |
+| R18 | 82 kΩ | 1 | SMD-0603 82K |  |
 | R20 | 8,2 kΩ | 1 | SMD-0603 8,2K | [Reichelt][reichelt] |
 | R19 | 1 MΩ | 1 | SMD-1206 1M | [Reichelt][reichelt] |
 | C12 | 150 pF | 1 | NPO-G0603 150P | [Reichelt][reichelt] |
@@ -42,7 +42,7 @@ This is work in progress
 | IC5 | LT1619ES8 | 1 | LT1619ES8 | [Aliexpress][aliexpress] |
 
 ## Display Board - BOM
-| Identifier | Type/Value | Quantity | Supplier Id | Supplier | Comment |
+| Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
 | ---        | ---        | ---      | ---         | ---      | ---     |
 | R1-R4 | 220 kΩ | 4 | SMD-0603 220K | [Reichelt][reichelt] |
 | R10-R60 | 22 kΩ | 4 | SMD-0603 22K | [Reichelt][reichelt] |
