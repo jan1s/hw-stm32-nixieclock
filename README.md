@@ -12,7 +12,7 @@ This is work in progress
 | C3, C5, C6, C10, C11 | 10 µF | 5 | X5R-G0603 10/6 |  |
 | L1 | Ferrite Bead | 1 | BLM18AG 121 | 490-1011-1-ND |
 | Y1 | 8MHz | 1 | - | 535-10630-1-ND |
-| Y2 | 32kHz | 1 | 32,768 PGD-9 | 535-9541-1-ND |
+| Y2 | 32kHz | 1 | 32,768 PGD-9 | 535-9542-1-ND |
 | LED1 | LED green | 1 | LG L29K |  |
 | LED2 | LED white | 1 | LW L283 | |
 | BAT1 | Batteryholder | 1 | - | BC501SM-ND |
