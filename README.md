@@ -11,22 +11,22 @@ This is work in progress
 | C18, C19, C20, C21 | 100 nF | 4 | X7R-G0603 100N |  |
 | C3, C5, C6, C10, C11 | 10 µF | 5 | X5R-G0603 10/6 |  |
 | L1 | Ferrite Bead | 1 | BLM18AG 121 |  |
-| Y1 | 8MHz | 1 | 32,768 PGD-9 |  |
+| Y1 | 8MHz | 1 | - | 535-10630-1-ND |
 | Y2 | 32kHz | 1 | 32,768 PGD-9 |  |
 | LED1 | LED green | 1 | LG L29K |  |
 | LED2 | LED white | 1 | LW L283 | |
-| BAT1 | Batteryholder | 1 | - |  |
-| BAT | CR 1220 | 1 | CR 1220 VAR | |
-| SW1 | Tact Switch Top | 1 | - | - |
-| J2 | USB Jack | 1 | USB BWM SMD |  |
-| IC1 | STM32F103C8T6 | 1 | STM32 F103C8T6 |  |
+| BAT1 | Batteryholder | 1 | - | BC501SM-ND |
+| BAT | CR 1220 | 1 | CR 1220 VAR | SY033-ND |
+| SW1 | Tact Switch Top | 1 | - | EG2531CT-ND |
+| J2 | USB Jack | 1 | USB BWM SMD | 151-1206-1-ND |
+| IC1 | STM32F103C8T6 | 1 | STM32 F103C8T6 | 497-6063-ND |
 | IC2, IC6 | LP2985 | 1 | LP 2985 IM5-3,3 |  |
-| IC3, IC4 | USBLC6-2 | 1 | - |  |
+| IC3, IC4 | USBLC6-2 | 1 | - | 497-5235-1-ND |
 
 ## Power supply - BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
 | ---        | ---        | ---      | ---         | ---      | ---     |
-| R23 | 0.01 Ω | 1 | 603-RL1206JR-070R01L | [Mouser][mouser] |
+| R23 | 0.01 Ω | 1 | - | RHM.10MCT-ND |
 | R18 | 82 kΩ | 1 | SMD-0603 82K |  |
 | R20 | 8,2 kΩ | 1 | SMD-0603 8,2K | [Reichelt][reichelt] |
 | R19 | 1 MΩ | 1 | SMD-1206 1M | [Reichelt][reichelt] |
@@ -39,7 +39,7 @@ This is work in progress
 | D3 | Diode | 1 | XXX | [Reichelt][reichelt] |
 | L2 | 680 µH | 1 | L-PISR 680µ | [Reichelt][reichelt] |
 | T1 | IRF 7470 | 1 | IRF 7470 | [Reichelt][reichelt] |
-| IC5 | LT1619ES8 | 1 | LT1619ES8 | [Aliexpress][aliexpress] |
+| IC5 | LT1619ES8 | 1 | - | LT1619ES8#PBF-ND |
 
 ## Display Board - BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
