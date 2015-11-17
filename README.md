@@ -10,6 +10,10 @@ The clock has seperate control and display pcbs. Those pcbs do not only form a b
 
 ![Display PCB for ZM1325](docu/top_display_zm1325_rev_a.png "Display PCB for ZM1325") 
 
+## Case
+
+![Case](docu/case_rev_a.png "Case") 
+
 
 ## BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
