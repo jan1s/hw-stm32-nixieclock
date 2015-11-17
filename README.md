@@ -6,9 +6,9 @@ This is work in progress
 
 The clock has seperate control and display pcbs. Those pcbs do not only form a basic case for the electronics, but also allow for flexible use with different tubes.
 
-![Control PCB](../top_control_rev_a.png "Control PCB") 
+![Control PCB](docu/top_control_rev_a.png' "Control PCB") 
 
-![Display PCB for ZM1325](../top_display_zm1325_rev_a.png "Display PCB for ZM1325") 
+![Display PCB for ZM1325](docu/top_display_zm1325_rev_a.png "Display PCB for ZM1325") 
 
 
 ## BOM
