@@ -20,7 +20,7 @@ The clock has seperate control and display pcbs. Those pcbs do not only form a b
 | :---        | :---        | :---      | :---         | :---      | :---     |
 | R1, R2, R3, R4 | 33 Ω | 4 | SMD-0603 33 | 311-33GRCT-ND |
 | R12, R13 | 1 kΩ | 2 | SMD-0603 1,00K | 311-1.0KGRCT-ND |
-| C1, C2, C13, C14 | 22 pF | 4 | NPO-G0603 22P |  |
+| C1, C2, C13, C14 | 10 pF | 4 | NPO-G0603 10P |  |
 | C7, C8 | 10 nF | 4 | X7R-G0603 10N |  |
 | C18, C19, C20, C21 | 100 nF | 4 | X7R-G0603 100N |  |
 | C3, C5, C6, C10, C11 | 10 µF | 5 | X5R-G0603 10/6 |  |
@@ -56,8 +56,6 @@ The clock has seperate control and display pcbs. Those pcbs do not only form a b
 | T1 | IRF 7470 | 1 | IRF 7470 | IRF7470PBFCT-ND |
 | IC5 | LT1619ES8 | 1 | - | LT1619ES8#PBF-ND |
 
-ACP 6-SMD 10K
-DI 12MM
 
 ## Display Board - BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
@@ -66,10 +64,18 @@ DI 12MM
 | R10-R60 | 22 kΩ | 4 | SMD-0603 22K |  |
 | RN10-RN71| 4x10 kΩ | 12 | BCN16 10K |  |
 | C1-C8 | 100 nF | 6 | X7R-G0603 100N |  |
-| T1-T69 | SMBTA 42 SMD | 42 | SMBTA 42 SMD | SMBTA42E6327INCT-ND |
+| T1-T69 | SMBTA 42 SMD | 46 | SMBTA 42 SMD | SMBTA42E6327INCT-ND |
 | IC1-IC8 | 74HC595PW | 6 |  | 568-2263-1-ND |
 | JP1 | 2x5pol Header | 1 | SL 2X10G SMD2,54 | 609-4723-ND |
 | GL1, GL2 | Neon Bulb | 2 | GLIMMLAMPE | C2A-ND |
+
+
+## Case - BOM
+| Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
+| ---        | ---        | ---      | ---         | ---      | ---     |
+| - | Spacer bolts | 4 | DI 12MM | - |
+| - | Feet | 4 | GF 63 | - |
+
 
 [reichelt]: http://www.reichelt.de
 [digikey]: http://www.digikey.de
