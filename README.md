@@ -6,7 +6,16 @@ The firmware running on the clock: [Firmware](https://github.com/jan1s/fw-clock)
 
 A small Gist to configure a STM32 toolchain on Mac: [Toolchain](https://gist.github.com/jan1s/d2cafa13cdc2b2f5d7b3)
 
-The host software to configure the clock: [Host Software](https://github.com/jan1s/cpp-nchron)
+To flash the controller a STM32 Programmer is needed, just get the cheapest one on [Aliexpress][aliexpress].
+
+The host software to configure the clock via serial port: [Host Software](https://github.com/jan1s/cpp-nchron)
+
+## PCB Errata (rev. a)
+
+In the first revision of the PCBs are some minor errors.
+
+* SCL of the shift registers are floating, they need to be connected to 5V
+* A pullup resistor is missing on the USB data lines
 
 
 ## PCBs
