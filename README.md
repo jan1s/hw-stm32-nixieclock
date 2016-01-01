@@ -2,11 +2,11 @@
 
 This is the repository describing the hardware for the nixieclock used in the 32c3 workshop.
 
-The firmware running on the clock: [Firmware][https://github.com/jan1s/fw-clock]
+The firmware running on the clock: [Firmware][https://github.com/jan1s/fw-clock "Firmware"]
 
-A small Gist to configure a STM32 toolchain on Mac: [Toolchain][https://gist.github.com/jan1s/d2cafa13cdc2b2f5d7b3]
+A small Gist to configure a STM32 toolchain on Mac: [Toolchain][https://gist.github.com/jan1s/d2cafa13cdc2b2f5d7b3 "Firmware"]
 
-The host software to configure the clock: [Host Software][https://github.com/jan1s/cpp-nchron]
+The host software to configure the clock: [Host Software][https://github.com/jan1s/cpp-nchron "Firmware"]
 
 
 ## PCBs
