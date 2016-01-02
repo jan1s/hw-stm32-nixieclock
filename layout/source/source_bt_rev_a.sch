@@ -8580,7 +8580,7 @@ http://dangerousprototypes.com</description>
 <part name="ISP" library="tactile-switch" deviceset="TACT-SWITCH-40-40" device=""/>
 <part name="IC2" library="dp_devices" deviceset="IC_USBLC6-2" device=""/>
 <part name="TRS1" library="con-trs" deviceset="PJ-3504" device=""/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="1µF"/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R0603" value="33R"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R0603" value="33R"/>
 <part name="FRAME2" library="frames" deviceset="DINA4_L" device=""/>
@@ -8597,13 +8597,13 @@ http://dangerousprototypes.com</description>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="D1" library="microbuilder" deviceset="DIODE" device="SOD-323"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="1µF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="1µF"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
-<part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
+<part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="10k"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
