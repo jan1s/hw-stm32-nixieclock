@@ -6014,24 +6014,62 @@ DIN A4, landscape with extra doc field</description>
 </library>
 <library name="battery-holder">
 <packages>
-<package name="HARWIN-CR1220">
-<smd name="NEG" x="0" y="7.5" dx="2.6" dy="3.75" layer="1"/>
-<smd name="POS" x="0" y="-8.75" dx="2.6" dy="3.5" layer="1"/>
-<hole x="0" y="3.5" drill="1"/>
-<hole x="0" y="-4" drill="1.3"/>
-<text x="-3" y="-0.6" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3" y="-2.35" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="0" y="0" radius="7.5" width="0.127" layer="51"/>
-<wire x1="-6.5" y1="-8" x2="6.5" y2="-8" width="0.127" layer="51"/>
-<wire x1="6.5" y1="-8" x2="7.2" y2="-7.2" width="0.127" layer="51" curve="90"/>
-<wire x1="-6.5" y1="-8" x2="-7.2" y2="-7.2" width="0.127" layer="51" curve="-90"/>
-<wire x1="-7.2" y1="-7.2" x2="-7.2" y2="-5.5" width="0.127" layer="51"/>
-<wire x1="-7.2" y1="-5.5" x2="-6.5" y2="-4.8" width="0.127" layer="51" curve="-90"/>
-<wire x1="-6.5" y1="-4.8" x2="-5.8" y2="-4.8" width="0.127" layer="51"/>
-<wire x1="7.2" y1="-7.2" x2="7.2" y2="-5.5" width="0.127" layer="51"/>
-<wire x1="7.2" y1="-5.5" x2="6.5" y2="-4.8" width="0.127" layer="51" curve="90"/>
-<wire x1="6.5" y1="-4.8" x2="5.8" y2="-4.8" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="6.00083125" width="0.127" layer="51"/>
+<package name="CH28-2032LF">
+<smd name="POS" x="0" y="14.65" dx="3.6" dy="2.6" layer="1"/>
+<smd name="NEG" x="0" y="-14.65" dx="3.6" dy="2.6" layer="1"/>
+<wire x1="-6.5" y1="11" x2="-4" y2="11" width="0.127" layer="21"/>
+<wire x1="4" y1="11" x2="8" y2="11" width="0.127" layer="21"/>
+<wire x1="8" y1="11" x2="8" y2="6" width="0.127" layer="21"/>
+<wire x1="8" y1="6" x2="8" y2="-6" width="0.127" layer="21"/>
+<wire x1="8" y1="-6" x2="8" y2="-11" width="0.127" layer="21"/>
+<wire x1="-4" y1="-11" x2="-8" y2="-11" width="0.127" layer="21"/>
+<wire x1="-8" y1="-11" x2="-8" y2="-6" width="0.127" layer="21"/>
+<wire x1="-8" y1="-6" x2="-8" y2="6" width="0.127" layer="21"/>
+<wire x1="-8" y1="6" x2="-8" y2="9.5" width="0.127" layer="21"/>
+<wire x1="-8" y1="9.5" x2="-6.5" y2="11" width="0.127" layer="21"/>
+<wire x1="-3" y1="6" x2="3" y2="6" width="0.127" layer="21"/>
+<wire x1="3" y1="6" x2="3" y2="-6" width="0.127" layer="21"/>
+<wire x1="3" y1="-6" x2="-3" y2="-6" width="0.127" layer="21"/>
+<wire x1="-3" y1="-6" x2="-3" y2="6" width="0.127" layer="21"/>
+<wire x1="-7" y1="-9.5" x2="-6" y2="-9.5" width="0.25" layer="21"/>
+<wire x1="6" y1="9.5" x2="7" y2="9.5" width="0.25" layer="21"/>
+<wire x1="6.5" y1="10" x2="6.5" y2="9" width="0.25" layer="21"/>
+<circle x="-6.5" y="-9.5" radius="1" width="0.127" layer="21"/>
+<circle x="6.5" y="9.5" radius="1" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="10" width="0.127" layer="51"/>
+<wire x1="-3" y1="9.5" x2="-8" y2="6" width="0.127" layer="21" curve="36.108856"/>
+<wire x1="-3" y1="9.5" x2="-3" y2="10" width="0.127" layer="21"/>
+<wire x1="-3" y1="10" x2="-3" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="12.5" x2="-3" y2="14" width="0.127" layer="21"/>
+<wire x1="-3" y1="14" x2="-4" y2="14" width="0.127" layer="21"/>
+<wire x1="-4" y1="14" x2="-4" y2="11" width="0.127" layer="21"/>
+<wire x1="3" y1="9.5" x2="3" y2="10" width="0.127" layer="21"/>
+<wire x1="3" y1="10" x2="3" y2="12.5" width="0.127" layer="21"/>
+<wire x1="3" y1="12.5" x2="3" y2="14" width="0.127" layer="21"/>
+<wire x1="3" y1="14" x2="4" y2="14" width="0.127" layer="21"/>
+<wire x1="4" y1="14" x2="4" y2="11" width="0.127" layer="21"/>
+<wire x1="3" y1="9.5" x2="8" y2="6" width="0.127" layer="21" curve="-35.086539"/>
+<wire x1="-3" y1="-9.5" x2="-3" y2="-10" width="0.127" layer="21"/>
+<wire x1="-3" y1="-10" x2="-3" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-12.5" x2="-3" y2="-14" width="0.127" layer="21"/>
+<wire x1="-3" y1="-14" x2="-4" y2="-14" width="0.127" layer="21"/>
+<wire x1="-4" y1="-14" x2="-4" y2="-11" width="0.127" layer="21"/>
+<wire x1="-3" y1="-9.5" x2="-8" y2="-6" width="0.127" layer="21" curve="-35.604534"/>
+<wire x1="3" y1="-14" x2="3" y2="-12.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-12.5" x2="3" y2="-10" width="0.127" layer="21"/>
+<wire x1="3" y1="-10" x2="3" y2="-9.5" width="0.127" layer="21"/>
+<wire x1="3" y1="-14" x2="4" y2="-14" width="0.127" layer="21"/>
+<wire x1="4" y1="-14" x2="4" y2="-11" width="0.127" layer="21"/>
+<wire x1="4" y1="-11" x2="8" y2="-11" width="0.127" layer="21"/>
+<wire x1="3" y1="-9.5" x2="8" y2="-6" width="0.127" layer="21" curve="35.604534"/>
+<wire x1="-3" y1="12.5" x2="3" y2="12.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="10" x2="3" y2="10" width="0.127" layer="21"/>
+<wire x1="-3" y1="-10" x2="3" y2="-10" width="0.127" layer="21"/>
+<wire x1="-3" y1="-12.5" x2="3" y2="-12.5" width="0.127" layer="21"/>
+<rectangle x1="-1.8" y1="12.5" x2="1.8" y2="14" layer="51"/>
+<rectangle x1="-1.8" y1="-14" x2="1.8" y2="-12.5" layer="51"/>
+<text x="10.16" y="-10.16" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="10.16" y="1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -6049,12 +6087,12 @@ DIN A4, landscape with extra doc field</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="CR1220-HOLDER">
+<deviceset name="CR2032-HOLDER" prefix="BT">
 <gates>
 <gate name="G$1" symbol="CR2032" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="HARWIN-CR1220">
+<device name="" package="CH28-2032LF">
 <connects>
 <connect gate="G$1" pin="NEG" pad="NEG"/>
 <connect gate="G$1" pin="POS" pad="POS"/>
@@ -8023,8 +8061,7 @@ Based on the following sources:
 <smd name="A" x="2.15" y="0" dx="2.3" dy="2.5" layer="1"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2" y1="1.3" x2="-1.5" y2="1.875" layer="21"/>
-<rectangle x1="-2" y1="-1.9" x2="-1.5" y2="-1.3" layer="21"/>
+<rectangle x1="-0.9" y1="-1.25" x2="-0.4" y2="1.25" layer="21"/>
 <rectangle x1="-2" y1="-1.875" x2="-1.5" y2="1.875" layer="51"/>
 </package>
 </packages>
@@ -9215,8 +9252,14 @@ http://dangerousprototypes.com</description>
 <smd name="14" x="6.75" y="-3" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
 <smd name="15" x="6.75" y="-1.5" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
 <smd name="16" x="6.75" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<text x="-5" y="-18" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5" y="-16" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-6.5" y="-13" size="1.27" layer="25">&gt;NAME</text>
+<text x="1.25" y="-13" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-6.75" y1="7" x2="6.75" y2="7" width="0.127" layer="21"/>
+<wire x1="6.75" y1="7" x2="6.75" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="7" x2="-6.75" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-11.25" x2="-6.75" y2="-11.5" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-11.5" x2="6.75" y2="-11.5" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-11.5" x2="6.75" y2="-11.25" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -9630,7 +9673,6 @@ DDEController.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
-<part name="BAT1" library="battery-holder" deviceset="CR1220-HOLDER" device="" value=""/>
 <part name="R12" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="R13" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
 <part name="LED1" library="led" deviceset="LED" device="CHIP-LED0603"/>
@@ -9744,6 +9786,7 @@ DDEController.pdf</description>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
+<part name="BAT1" library="battery-holder" deviceset="CR2032-HOLDER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9768,7 +9811,6 @@ DDEController.pdf</description>
 <instance part="FB1" gate="G$1" x="48.26" y="167.64" rot="R180"/>
 <instance part="GND1" gate="1" x="193.04" y="43.18"/>
 <instance part="GND22" gate="1" x="86.36" y="116.84" rot="MR270"/>
-<instance part="BAT1" gate="G$1" x="193.04" y="55.88"/>
 <instance part="+3V8" gate="G$1" x="157.48" y="93.98" rot="R90"/>
 <instance part="IC2" gate="G$1" x="48.26" y="35.56"/>
 <instance part="+3V5" gate="G$1" x="76.2" y="48.26"/>
@@ -9877,6 +9919,7 @@ DDEController.pdf</description>
 <instance part="GND36" gate="1" x="106.68" y="73.66"/>
 <instance part="GND37" gate="1" x="132.08" y="73.66"/>
 <instance part="P+6" gate="1" x="134.62" y="172.72"/>
+<instance part="BAT1" gate="G$1" x="193.04" y="55.88"/>
 </instances>
 <busses>
 </busses>
@@ -9912,13 +9955,13 @@ DDEController.pdf</description>
 </segment>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="BAT1" gate="G$1" pin="NEG"/>
 <wire x1="193.04" y1="50.8" x2="193.04" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="193.04" y1="48.26" x2="193.04" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="48.26" x2="210.82" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="210.82" y1="48.26" x2="210.82" y2="53.34" width="0.1524" layer="91"/>
 <junction x="193.04" y="48.26"/>
+<pinref part="BAT1" gate="G$1" pin="NEG"/>
 </segment>
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
@@ -10822,7 +10865,6 @@ DDEController.pdf</description>
 <label x="177.8" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BAT1" gate="G$1" pin="POS"/>
 <wire x1="193.04" y1="63.5" x2="193.04" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="66.04" x2="210.82" y2="66.04" width="0.1524" layer="91"/>
@@ -10830,6 +10872,7 @@ DDEController.pdf</description>
 <wire x1="193.04" y1="66.04" x2="193.04" y2="68.58" width="0.1524" layer="91"/>
 <junction x="193.04" y="66.04"/>
 <label x="193.04" y="68.58" size="1.778" layer="95"/>
+<pinref part="BAT1" gate="G$1" pin="POS"/>
 </segment>
 </net>
 <net name="N$7" class="0">

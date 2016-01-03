@@ -8023,8 +8023,7 @@ Based on the following sources:
 <smd name="A" x="2.15" y="0" dx="2.3" dy="2.5" layer="1"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2" y1="1.3" x2="-1.5" y2="1.875" layer="21"/>
-<rectangle x1="-2" y1="-1.9" x2="-1.5" y2="-1.3" layer="21"/>
+<rectangle x1="-0.9" y1="-1.25" x2="-0.4" y2="1.25" layer="21"/>
 <rectangle x1="-2" y1="-1.875" x2="-1.5" y2="1.875" layer="51"/>
 </package>
 </packages>
@@ -9696,8 +9695,14 @@ DDEController.pdf</description>
 <smd name="14" x="6.75" y="-3" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
 <smd name="15" x="6.75" y="-1.5" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
 <smd name="16" x="6.75" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R180"/>
-<text x="-5" y="-18" size="1.27" layer="25">&gt;NAME</text>
-<text x="-5" y="-16" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-6.5" y="-13" size="1.27" layer="25">&gt;NAME</text>
+<text x="1.25" y="-13" size="1.27" layer="27">&gt;VALUE</text>
+<wire x1="-6.75" y1="7" x2="6.75" y2="7" width="0.127" layer="21"/>
+<wire x1="6.75" y1="7" x2="6.75" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="7" x2="-6.75" y2="0.75" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-11.25" x2="-6.75" y2="-11.5" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-11.5" x2="6.75" y2="-11.5" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-11.5" x2="6.75" y2="-11.25" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
