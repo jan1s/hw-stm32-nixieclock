@@ -4,6 +4,10 @@
 
 ![PCB](d100_zm1000_rev_a.png "PCB") 
 
+In rev a of the PCB is an error. (This is the version from the 32C3 workshop)
+
+* SCL of the shift registers are floating, they need to be connected to 5V
+
 ## d100 ZM1000 rev. b
 
 ![PCB](d100_zm1000_rev_b.png "PCB") 
@@ -12,6 +16,10 @@
 ## d100 ZM1325 rev. a
 
 ![PCB](d100_zm1325_rev_a.png "PCB") 
+
+In rev a of the PCB is an error. (This is the version from the 32C3 workshop)
+
+* SCL of the shift registers are floating, they need to be connected to 5V
 
 ## d100 ZM1325 rev. b
 
