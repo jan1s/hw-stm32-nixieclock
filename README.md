@@ -1,6 +1,4 @@
-# hw-nixieclock-mini
-
-This is the repository describing the hardware for the nixieclock used in the 32c3 workshop.
+# hw-nixieclock
 
 The firmware running on the clock: [Firmware](https://github.com/jan1s/fw-clock)
 
