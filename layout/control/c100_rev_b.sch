@@ -8023,6 +8023,8 @@ Based on the following sources:
 <smd name="A" x="2.15" y="0" dx="2.3" dy="2.5" layer="1"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2" y1="1.3" x2="-1.5" y2="1.875" layer="21"/>
+<rectangle x1="-2" y1="-1.9" x2="-1.5" y2="-1.3" layer="21"/>
 <rectangle x1="-2" y1="-1.875" x2="-1.5" y2="1.875" layer="51"/>
 </package>
 </packages>
@@ -8518,7 +8520,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
 <wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -8608,7 +8610,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/703465986AD8611_2_0.pdf<
 <wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
 <wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="21"/>
 <smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
@@ -9011,10 +9013,10 @@ http://dangerousprototypes.com</description>
 <library name="con-trs">
 <packages>
 <package name="YD-PJ-3504">
-<smd name="5" x="11.2" y="-3.25" dx="1.2" dy="2.5" layer="1"/>
-<smd name="4" x="10.2" y="3.25" dx="1.2" dy="2.5" layer="1"/>
-<smd name="3" x="6.2" y="3.25" dx="1.2" dy="2.5" layer="1"/>
-<smd name="2" x="3.2" y="3.25" dx="1.2" dy="2.5" layer="1"/>
+<smd name="5" x="11.2" y="-3.4" dx="1.5" dy="2.8" layer="1"/>
+<smd name="4" x="10.2" y="3.4" dx="1.5" dy="2.8" layer="1"/>
+<smd name="3" x="6.2" y="3.4" dx="1.5" dy="2.8" layer="1"/>
+<smd name="2" x="3.2" y="3.4" dx="1.5" dy="2.8" layer="1"/>
 <wire x1="0" y1="3.05" x2="0" y2="2.5" width="0.127" layer="51"/>
 <wire x1="0" y1="2.5" x2="0" y2="-2.5" width="0.127" layer="51"/>
 <wire x1="0" y1="-2.5" x2="0" y2="-3.05" width="0.127" layer="51"/>
@@ -9022,7 +9024,7 @@ http://dangerousprototypes.com</description>
 <wire x1="12.1" y1="-3.05" x2="12.1" y2="3.05" width="0.127" layer="51"/>
 <wire x1="12.1" y1="3.05" x2="0" y2="3.05" width="0.127" layer="51"/>
 <hole x="1.6" y="0" drill="1.5"/>
-<hole x="7" y="0" drill="1.5"/>
+<hole x="8.6" y="0" drill="1.5"/>
 <wire x1="0" y1="2.5" x2="-2" y2="2.5" width="0.127" layer="51"/>
 <wire x1="-2" y1="2.5" x2="-2" y2="-2.5" width="0.127" layer="51"/>
 <wire x1="-2" y1="-2.5" x2="0" y2="-2.5" width="0.127" layer="51"/>
@@ -9848,7 +9850,7 @@ DDEController.pdf</description>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
+<part name="C18" library="rcl" deviceset="C-EU" device="C0603" value="1µF"/>
 <part name="JP1" library="con-pinhead" deviceset="PINHD-2X5" device="_2.54-SMD"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
@@ -9866,7 +9868,7 @@ DDEController.pdf</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="BT" library="bt" deviceset="HM-11" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
-<part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="10µF"/>
+<part name="C22" library="rcl" deviceset="C-EU" device="C0603" value="1µF"/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="LED3" library="led" deviceset="LED" device="CHIP-LED0603"/>
 <part name="R7" library="rcl" deviceset="R-EU_" device="R0603" value="1k"/>
