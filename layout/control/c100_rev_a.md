@@ -1,24 +1,28 @@
-# Control PCBs
+# hw-nixieclock
 
-## c100
+The firmware running on the clock: [Firmware](https://github.com/jan1s/fw-clock)
 
-![Control PCB](c100_rev_a.png "Control PCB")
-rev. a
+A small Gist to configure a STM32 toolchain on Mac: [Toolchain](https://gist.github.com/jan1s/d2cafa13cdc2b2f5d7b3)
+
+To flash the controller a STM32 Programmer is needed, just get the cheapest one on [Aliexpress][aliexpress].
+
+The host software to configure the clock via serial port: [Host Software](https://github.com/jan1s/cpp-nchron)
+
+## PCB Errata (rev. a)
 
 In the first revision of the PCBs are some minor errors. (This is the version from the 32C3 workshop)
 
+* SCL of the shift registers are floating, they need to be connected to 5V
 * A pullup resistor is missing on the USB data lines
 * LED silkscreen missing, they are on the right of the controller
 
-![Control PCB](c100_rev_b.png "Control PCB")
-rev. b
 
-## c150
+## PCBs
 
-![Control PCB](c150_rev_a.png "Control PCB")
-rev. a
+The clock has seperate control and display pcbs. Those pcbs do not only form a basic case for the electronics, but also allow for flexible use with different tubes.
 
-### control BOM
+
+## BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
 | :---        | :---        | :---      | :---         | :---      | :---     |
 | R1, R2, R3, R4 | 33 Ω | 4 | SMD-0603 33 | 311-33GRCT-ND |
@@ -32,8 +36,7 @@ rev. a
 | Y2 | 32kHz | 1 | 32,768 PGD-9 | 535-9542-1-ND |
 | LED1 | LED green | 1 | LG L29K |  |
 | LED2 | LED white | 1 | LW L283 | |
-| BAT1 | Batteryholder | 1 | - | BC501SM-ND | c100 |
-| BAT1 | Batteryholder | 1 | KZH 20SMD-2 | - | c150 |
+| BAT1 | Batteryholder | 1 | - | BC501SM-ND |
 | BAT | CR 1220 | 1 | CR 1220 VAR | SY033-ND |
 | SW1 | Tact Switch Top | 1 | - | EG2531CT-ND |
 | J1 | 2x5 Socket | 1 | - | A100866TR-ND, S5714-ND |
@@ -42,8 +45,7 @@ rev. a
 | IC2, IC6 | LP2985 | 1 | LP 2985 IM5-3,3 |  |
 | IC3, IC4 | USBLC6-2 | 1 | - | 497-5235-1-ND |
 
-
-### power supply BOM
+## Power supply - BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
 | ---        | ---        | ---      | ---         | ---      | ---     |
 | R23 | 0.01 Ω | 1 | - | RHM.10MCT-ND |
@@ -60,3 +62,29 @@ rev. a
 | L2 | 680 µH | 1 | L-PISR 680µ |  |
 | IC7 | IRF 7470 | 1 | IRF 7470 | IRF7470PBFCT-ND |
 | IC5 | LT1619ES8 | 1 | - | LT1619ES8#PBF-ND |
+
+
+## Display Board - BOM
+| Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
+| ---        | ---        | ---      | ---         | ---      | ---     |
+| R1-R2 | 220 kΩ | 2 | SMD-0603 220K |  |
+| R10-R46 | 22 kΩ | 4 | SMD-0603 22K |  |
+| RN10-RN61| 4x10 kΩ | 12 | BCN16 10K |  |
+| C1-C6 | 100 nF | 6 | X7R-G0603 100N |  |
+| T1-T69 | SMBTA 42 SMD | 46 | SMBTA 42 SMD | SMBTA42E6327INCT-ND |
+| IC1-IC6 | 74HC595PW | 6 |  | 568-2263-1-ND |
+| JP1 | 2x5pol Header | 1 | SL 2X10G SMD2,54 | 609-4723-ND |
+| GL1, GL2 | Neon Bulb | 2 | GLIMMLAMPE | C2A-ND |
+
+
+## Case - BOM
+| Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
+| ---        | ---        | ---      | ---         | ---      | ---     |
+| - | Spacer bolts | 4 | DI 12MM | - |
+| - | Feet | 4 | GF 63 | - |
+
+
+[reichelt]: http://www.reichelt.de
+[digikey]: http://www.digikey.de
+[mouser]: http://mouser.com
+[aliexpress]: http://www.aliexpress.com
