@@ -60,3 +60,8 @@ rev. a
 | L2 | 680 µH | 1 | L-PISR 680µ |  |
 | IC7 | IRF 7470 | 1 | IRF 7470 | IRF7470PBFCT-ND |
 | IC5 | LT1619ES8 | 1 | - | LT1619ES8#PBF-ND |
+
+[reichelt]: http://www.reichelt.de
+[digikey]: http://www.digikey.de
+[mouser]: http://mouser.com
+[aliexpress]: http://www.aliexpress.com
