@@ -21,6 +21,12 @@ In the first revision of the PCBs are some minor errors. (This is the version fr
 
 The clock has seperate control and display pcbs. Those pcbs do not only form a basic case for the electronics, but also allow for flexible use with different tubes.
 
+[Control PCBs](layout/control)
+
+[Display PCBs](layout/display)
+
+[Source PCBs](layout/source)
+
 
 ## BOM
 | Identifier | Type/Value | Quantity | [Reichelt][reichelt] | [Digikey][digikey] | Comment |
