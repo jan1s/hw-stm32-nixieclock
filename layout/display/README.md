@@ -10,6 +10,7 @@ The display boards with 100mm width use a smaller variant of the 74hc595 shift r
 rev. a
 
 In rev a of the PCB is an error. (This is the version from the 32C3 workshop)
+Find detailed pictures of the first prototype [here](../../docu/detail_d100_zm1325_rev_a).
 
 * SCL of the shift registers are floating, they need to be connected to 5V
 
