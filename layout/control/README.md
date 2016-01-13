@@ -6,6 +6,7 @@
 rev. a
 
 In the first revision of the PCBs are some minor errors. (This is the version from the 32C3 workshop)
+Find detailed pictures of the first prototype [here](../../docu/detail_c100_rev_a).
 
 * A pullup resistor is missing on the USB data lines
 * LED silkscreen missing, they are on the right of the controller
