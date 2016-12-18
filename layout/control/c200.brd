@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -63,6 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -8403,6 +8404,41 @@ http://dangerousprototypes.com</description>
 </package>
 </packages>
 </library>
+<library name="espressif">
+<packages>
+<package name="ESP-12F">
+<wire x1="-8" y1="0" x2="-8" y2="-24" width="0.127" layer="51"/>
+<wire x1="-8" y1="-24" x2="8" y2="-24" width="0.127" layer="51"/>
+<wire x1="8" y1="-24" x2="8" y2="0" width="0.127" layer="51"/>
+<wire x1="8" y1="0" x2="-8" y2="0" width="0.127" layer="51"/>
+<smd name="14" x="5" y="-24" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="13" x="3" y="-24" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="12" x="1" y="-24" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="11" x="-1" y="-24" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="10" x="-3" y="-24" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="9" x="-5" y="-24" dx="2" dy="1" layer="1" rot="R90"/>
+<smd name="15" x="7.75" y="-22.5" dx="2.5" dy="1" layer="1" rot="R180"/>
+<smd name="16" x="7.5" y="-20.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="17" x="7.5" y="-18.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="18" x="7.5" y="-16.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="19" x="7.5" y="-14.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="20" x="7.5" y="-12.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="21" x="7.5" y="-10.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="22" x="7.5" y="-8.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="1" x="-7.5" y="-8.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="2" x="-7.5" y="-10.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="3" x="-7.5" y="-12.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="4" x="-7.5" y="-14.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="5" x="-7.5" y="-16.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="6" x="-7.5" y="-18.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="7" x="-7.5" y="-20.5" dx="3" dy="1" layer="1" rot="R180"/>
+<smd name="8" x="-7.75" y="-22.5" dx="2.5" dy="1" layer="1" rot="R180"/>
+<wire x1="-8" y1="-7" x2="8" y2="-7" width="0.127" layer="49"/>
+<text x="-7" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+<text x="-7" y="-6" size="1.27" layer="25">&gt;NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8412,7 +8448,7 @@ http://dangerousprototypes.com</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules>
+<designrules name="default">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -8500,6 +8536,9 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -8769,7 +8808,7 @@ design rules under a new name.</description>
 <element name="R5" library="rcl" package="R0603" value="33R" x="187.5" y="21.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="187.135" y="19.385" size="0.8128" layer="25" rot="R270"/>
 </element>
-<element name="U$1" library="pcb-artwork" package="JANIS_10MM" value="" x="94" y="7"/>
+<element name="U$1" library="pcb-artwork" package="JANIS_10MM" value="" x="93.75" y="6.25"/>
 <element name="R6" library="rcl" package="R0603" value="1k5" x="185.75" y="11.75" smashed="yes" rot="R270">
 <attribute name="NAME" x="189.615" y="9.615" size="0.8128" layer="25" rot="R90"/>
 </element>
@@ -8799,6 +8838,22 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="146.19" y="3.055" size="1.27" layer="27"/>
 </element>
 <element name="LOGO2" library="ohw-logo" package="OSHW_FILLX200_NOTEXT" value="OSHW_LOGO_FILLX0200-NT" x="86.25" y="3.25"/>
+<element name="U$3" library="espressif" package="ESP-12F" value="ESP-12F" x="115" y="39"/>
+<element name="C23" library="rcl" package="C0603" value="1µF" x="104.75" y="15.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="103.865" y="14.365" size="0.8128" layer="25" rot="R90"/>
+</element>
+<element name="R9" library="rcl" package="R0603" value="10k" x="103" y="29" smashed="yes" rot="R180">
+<attribute name="NAME" x="103.635" y="28.365" size="0.8128" layer="25" rot="R180"/>
+</element>
+<element name="R10" library="rcl" package="R0603" value="10k" x="127" y="22.5" smashed="yes">
+<attribute name="NAME" x="128.615" y="22.135" size="0.8128" layer="25"/>
+</element>
+<element name="R11" library="rcl" package="R0603" value="10k" x="127" y="20.5" smashed="yes">
+<attribute name="NAME" x="128.615" y="20.135" size="0.8128" layer="25"/>
+</element>
+<element name="R14" library="rcl" package="R0603" value="10k" x="127" y="18.5" smashed="yes">
+<attribute name="NAME" x="128.615" y="18.135" size="0.8128" layer="25"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -9438,15 +9493,10 @@ design rules under a new name.</description>
 <via x="101" y="31" extent="1-16" drill="0.32"/>
 <via x="103" y="31" extent="1-16" drill="0.32"/>
 <via x="105" y="31" extent="1-16" drill="0.32"/>
-<via x="107" y="31" extent="1-16" drill="0.32"/>
-<via x="109" y="31" extent="1-16" drill="0.32"/>
-<via x="111" y="31" extent="1-16" drill="0.32"/>
 <via x="113" y="31" extent="1-16" drill="0.32"/>
 <via x="115" y="31" extent="1-16" drill="0.32"/>
 <via x="117" y="31" extent="1-16" drill="0.32"/>
 <via x="119" y="31" extent="1-16" drill="0.32"/>
-<via x="121" y="31" extent="1-16" drill="0.32"/>
-<via x="123" y="31" extent="1-16" drill="0.32"/>
 <via x="125" y="31" extent="1-16" drill="0.32"/>
 <via x="127" y="31" extent="1-16" drill="0.32"/>
 <via x="129" y="31" extent="1-16" drill="0.32"/>
@@ -9464,34 +9514,19 @@ design rules under a new name.</description>
 <via x="92" y="28" extent="1-16" drill="0.32"/>
 <via x="96" y="28" extent="1-16" drill="0.32"/>
 <via x="100" y="28" extent="1-16" drill="0.32"/>
-<via x="104" y="16" extent="1-16" drill="0.32"/>
-<via x="104" y="20" extent="1-16" drill="0.32"/>
-<via x="104" y="24" extent="1-16" drill="0.32"/>
-<via x="104" y="28" extent="1-16" drill="0.32"/>
-<via x="108" y="28" extent="1-16" drill="0.32"/>
-<via x="108" y="24" extent="1-16" drill="0.32"/>
-<via x="108" y="20" extent="1-16" drill="0.32"/>
-<via x="108" y="16" extent="1-16" drill="0.32"/>
-<via x="112" y="16" extent="1-16" drill="0.32"/>
 <via x="112" y="20" extent="1-16" drill="0.32"/>
 <via x="112" y="24" extent="1-16" drill="0.32"/>
 <via x="112" y="28" extent="1-16" drill="0.32"/>
 <via x="116" y="28" extent="1-16" drill="0.32"/>
 <via x="116" y="24" extent="1-16" drill="0.32"/>
 <via x="116" y="20" extent="1-16" drill="0.32"/>
-<via x="116" y="16" extent="1-16" drill="0.32"/>
-<via x="120" y="16" extent="1-16" drill="0.32"/>
 <via x="120" y="20" extent="1-16" drill="0.32"/>
 <via x="120" y="24" extent="1-16" drill="0.32"/>
 <via x="120" y="28" extent="1-16" drill="0.32"/>
-<via x="124" y="28" extent="1-16" drill="0.32"/>
-<via x="124" y="24" extent="1-16" drill="0.32"/>
-<via x="124" y="20" extent="1-16" drill="0.32"/>
-<via x="124" y="16" extent="1-16" drill="0.32"/>
 <via x="128" y="16" extent="1-16" drill="0.32"/>
-<via x="128" y="20" extent="1-16" drill="0.32"/>
-<via x="128" y="24" extent="1-16" drill="0.32"/>
-<via x="128" y="28" extent="1-16" drill="0.32"/>
+<contactref element="U$3" pad="15"/>
+<contactref element="C23" pad="2"/>
+<contactref element="R14" pad="2"/>
 </signal>
 <signal name="+5V">
 <contactref element="C5" pad="1"/>
@@ -9689,6 +9724,16 @@ design rules under a new name.</description>
 <wire x1="149" y1="29.65" x2="150.85" y2="29.65" width="0.254" layer="1"/>
 <wire x1="150.85" y1="29.65" x2="152" y2="28.5" width="0.254" layer="1"/>
 <wire x1="152" y1="28" x2="152" y2="28.5" width="0.254" layer="1"/>
+<contactref element="U$3" pad="8"/>
+<contactref element="C23" pad="1"/>
+<contactref element="R10" pad="2"/>
+<contactref element="R11" pad="2"/>
+<contactref element="R9" pad="2"/>
+<wire x1="127.85" y1="20.5" x2="146.75" y2="20.5" width="0" layer="19" extent="1-1"/>
+<wire x1="127.85" y1="22.5" x2="127.85" y2="20.5" width="0" layer="19" extent="1-1"/>
+<wire x1="107.25" y1="16.5" x2="127.85" y2="20.5" width="0" layer="19" extent="1-1"/>
+<wire x1="104.75" y1="16.35" x2="107.25" y2="16.5" width="0" layer="19" extent="1-1"/>
+<wire x1="102.15" y1="29" x2="104.75" y2="16.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="IC2" pad="4"/>
@@ -10023,6 +10068,14 @@ design rules under a new name.</description>
 <via x="134.75" y="26.5" extent="1-16" drill="0.32"/>
 <wire x1="134.75" y1="26.5" x2="135.5" y2="26.5" width="0.254" layer="16"/>
 <wire x1="135.5" y1="26.5" x2="136" y2="27" width="0.254" layer="16"/>
+<contactref element="U$3" pad="21"/>
+<wire x1="133.25" y1="26.5" x2="132" y2="26.5" width="0.254" layer="1"/>
+<wire x1="132" y1="26.5" x2="131.5" y2="27" width="0.254" layer="1"/>
+<wire x1="131.5" y1="27" x2="131.5" y2="28" width="0.254" layer="1"/>
+<wire x1="122.5" y1="28.5" x2="125" y2="28.5" width="0.254" layer="1"/>
+<wire x1="125" y1="28.5" x2="125.5" y2="29" width="0.254" layer="1"/>
+<wire x1="125.5" y1="29" x2="130.5" y2="29" width="0.254" layer="1"/>
+<wire x1="130.5" y1="29" x2="131.5" y2="28" width="0.254" layer="1"/>
 </signal>
 <signal name="USART2_RX">
 <contactref element="IC1" pad="13"/>
@@ -10041,6 +10094,10 @@ design rules under a new name.</description>
 <wire x1="152.5" y1="27.5" x2="136" y2="27.5" width="0.254" layer="16"/>
 <wire x1="136" y1="27.5" x2="134.75" y2="28.75" width="0.254" layer="16"/>
 <wire x1="134.75" y1="28.75" x2="134.75" y2="29.5" width="0.254" layer="16"/>
+<contactref element="U$3" pad="22"/>
+<wire x1="133.25" y1="29.5" x2="125.5" y2="29.5" width="0.254" layer="1"/>
+<wire x1="122.5" y1="30.5" x2="124.5" y2="30.5" width="0.254" layer="1"/>
+<wire x1="124.5" y1="30.5" x2="125.5" y2="29.5" width="0.254" layer="1"/>
 </signal>
 <signal name="SPI1_SCK">
 <contactref element="IC1" pad="15"/>
@@ -10089,9 +10146,6 @@ design rules under a new name.</description>
 <wire x1="177" y1="19" x2="176.55" y2="18.55" width="0.254" layer="1"/>
 <wire x1="175.05" y1="18.55" x2="176.55" y2="18.55" width="0.254" layer="1"/>
 </signal>
-<signal name="N$42">
-<contactref element="IC1" pad="10"/>
-</signal>
 <signal name="SWDIO">
 <contactref element="IC1" pad="34"/>
 <contactref element="SWD" pad="3"/>
@@ -10116,11 +10170,12 @@ design rules under a new name.</description>
 <signal name="JTDI">
 <contactref element="IC1" pad="38"/>
 </signal>
-<signal name="N$32">
+<signal name="RFMOD_DBG">
 <contactref element="IC1" pad="19"/>
-</signal>
-<signal name="N$34">
-<contactref element="IC1" pad="20"/>
+<contactref element="U$3" pad="17"/>
+<contactref element="R11" pad="1"/>
+<wire x1="122.5" y1="20.5" x2="126.15" y2="20.5" width="0.254" layer="1"/>
+<wire x1="126.15" y1="20.5" x2="177.75" y2="26.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="JTDO">
 <contactref element="IC1" pad="39"/>
@@ -10267,7 +10322,7 @@ design rules under a new name.</description>
 <wire x1="149" y1="26.4" x2="150.4" y2="26.4" width="0.254" layer="1"/>
 <wire x1="150.4" y1="26.4" x2="150.5" y2="26.5" width="0.254" layer="1"/>
 </signal>
-<signal name="BT_USER">
+<signal name="RFMOD_EN">
 <contactref element="BT" pad="16"/>
 <contactref element="R8" pad="2"/>
 <contactref element="IC1" pad="11"/>
@@ -10283,6 +10338,31 @@ design rules under a new name.</description>
 <wire x1="149.1" y1="31" x2="149" y2="31.35" width="0.254" layer="1"/>
 <wire x1="146.75" y1="31" x2="148.9" y2="31" width="0.254" layer="1"/>
 <wire x1="148.9" y1="31" x2="149" y2="31.35" width="0.254" layer="1"/>
+<contactref element="U$3" pad="3"/>
+<wire x1="107.5" y1="26.5" x2="146.75" y2="31" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RFMOD_RST">
+<contactref element="U$3" pad="1"/>
+<contactref element="BT" pad="11"/>
+<contactref element="R9" pad="1"/>
+<contactref element="IC1" pad="10"/>
+<wire x1="103.85" y1="29" x2="104.5" y2="29" width="0.254" layer="1"/>
+<wire x1="104.5" y1="29" x2="106" y2="30.5" width="0.254" layer="1"/>
+<wire x1="107.5" y1="30.5" x2="106" y2="30.5" width="0.254" layer="1"/>
+<wire x1="146.75" y1="23.5" x2="180.25" y2="31.25" width="0" layer="19" extent="1-1"/>
+<wire x1="107.5" y1="30.5" x2="146.75" y2="23.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RFMOD_FLASH">
+<contactref element="U$3" pad="18"/>
+<contactref element="R10" pad="1"/>
+<contactref element="IC1" pad="20"/>
+<wire x1="122.5" y1="22.5" x2="126.15" y2="22.5" width="0.254" layer="1"/>
+<wire x1="126.15" y1="22.5" x2="177.75" y2="26.25" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="U$3" pad="16"/>
+<contactref element="R14" pad="1"/>
+<wire x1="122.5" y1="18.5" x2="126.15" y2="18.5" width="0.254" layer="1"/>
 </signal>
 </signals>
 </board>
