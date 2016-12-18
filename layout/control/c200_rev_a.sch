@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9849,7 +9849,7 @@ DDEController.pdf</description>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
-<part name="U$3" library="espressif" deviceset="ESP-12F" device=""/>
+<part name="WIFI" library="espressif" deviceset="ESP-12F" device=""/>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="1µF"/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="+3V7" library="supply1" deviceset="+3V3" device=""/>
@@ -9994,7 +9994,7 @@ DDEController.pdf</description>
 <instance part="GND36" gate="1" x="106.68" y="73.66"/>
 <instance part="GND37" gate="1" x="132.08" y="73.66"/>
 <instance part="P+6" gate="1" x="134.62" y="172.72"/>
-<instance part="U$3" gate="G$1" x="421.64" y="76.2"/>
+<instance part="WIFI" gate="G$1" x="421.64" y="76.2"/>
 <instance part="C23" gate="G$1" x="449.58" y="58.42"/>
 <instance part="GND17" gate="1" x="449.58" y="48.26"/>
 <instance part="+3V7" gate="G$1" x="449.58" y="66.04"/>
@@ -10266,7 +10266,7 @@ DDEController.pdf</description>
 <wire x1="127" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
+<pinref part="WIFI" gate="G$1" pin="GND"/>
 <pinref part="C23" gate="G$1" pin="2"/>
 <wire x1="439.42" y1="53.34" x2="449.58" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="449.58" y1="53.34" x2="449.58" y2="50.8" width="0.1524" layer="91"/>
@@ -10440,7 +10440,7 @@ DDEController.pdf</description>
 <wire x1="353.06" y1="55.88" x2="353.06" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="WIFI" gate="G$1" pin="VCC"/>
 <pinref part="C23" gate="G$1" pin="1"/>
 <wire x1="439.42" y1="60.96" x2="449.58" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="449.58" y1="60.96" x2="449.58" y2="63.5" width="0.1524" layer="91"/>
@@ -10790,7 +10790,7 @@ DDEController.pdf</description>
 <label x="284.48" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="RXD"/>
+<pinref part="WIFI" gate="G$1" pin="RXD"/>
 <wire x1="439.42" y1="71.12" x2="441.96" y2="71.12" width="0.1524" layer="91"/>
 <label x="441.96" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -10807,7 +10807,7 @@ DDEController.pdf</description>
 <label x="284.48" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="TXD"/>
+<pinref part="WIFI" gate="G$1" pin="TXD"/>
 <wire x1="439.42" y1="73.66" x2="441.96" y2="73.66" width="0.1524" layer="91"/>
 <label x="441.96" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -10904,7 +10904,7 @@ DDEController.pdf</description>
 <label x="241.3" y="129.54" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GPIO2"/>
+<pinref part="WIFI" gate="G$1" pin="GPIO2"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="403.86" y1="68.58" x2="393.7" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="393.7" y1="68.58" x2="393.7" y2="71.12" width="0.1524" layer="91"/>
@@ -11116,14 +11116,14 @@ DDEController.pdf</description>
 <label x="241.3" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="EN"/>
+<pinref part="WIFI" gate="G$1" pin="EN"/>
 <wire x1="439.42" y1="91.44" x2="462.28" y2="91.44" width="0.1524" layer="91"/>
 <label x="462.28" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RFMOD_RST" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="RST"/>
+<pinref part="WIFI" gate="G$1" pin="RST"/>
 <wire x1="439.42" y1="96.52" x2="452.12" y2="96.52" width="0.1524" layer="91"/>
 <label x="462.28" y="96.52" size="1.778" layer="95"/>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -11144,7 +11144,7 @@ DDEController.pdf</description>
 </net>
 <net name="RFMOD_FLASH" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="GPIO0"/>
+<pinref part="WIFI" gate="G$1" pin="GPIO0"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="403.86" y1="66.04" x2="383.54" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="66.04" x2="383.54" y2="71.12" width="0.1524" layer="91"/>
@@ -11160,7 +11160,7 @@ DDEController.pdf</description>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="GPIO15"/>
+<pinref part="WIFI" gate="G$1" pin="GPIO15"/>
 <pinref part="R14" gate="G$1" pin="1"/>
 <wire x1="398.78" y1="93.98" x2="403.86" y2="93.98" width="0.1524" layer="91"/>
 </segment>
