@@ -18,8 +18,9 @@ nixie_settype <type(0-4)>
 Where `<type>` is a number defining the nixie clock type.
 
 1. ZM1000
-2. Z570M
+2. Z570M, IN-8
 3. ZM1325
+4. IN-14, ZM1020
 
 It is also required to set the mode of operation:
 
