@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9869,6 +9869,58 @@ DDEController.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="hv-mod">
+<packages>
+<package name="HV5W-D">
+<wire x1="-15.25" y1="5.5" x2="15.25" y2="5.5" width="0.127" layer="51"/>
+<wire x1="15.25" y1="5.5" x2="15.25" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="15.25" y1="-5.5" x2="-15.25" y2="-5.5" width="0.127" layer="51"/>
+<wire x1="-15.25" y1="-5.5" x2="-15.25" y2="5.5" width="0.127" layer="51"/>
+<smd name="GND3" x="-15" y="1.25" dx="3" dy="1.8" layer="1"/>
+<smd name="GND2" x="-15" y="-1.25" dx="3" dy="1.8" layer="1"/>
+<smd name="HV" x="-15" y="-3.75" dx="3" dy="1.8" layer="1"/>
+<smd name="+5V" x="-15" y="3.75" dx="3" dy="1.8" layer="1"/>
+<smd name="GND1" x="15" y="1.25" dx="3" dy="1.8" layer="1"/>
+<smd name="EN" x="15" y="-1.25" dx="3" dy="1.8" layer="1"/>
+<text x="-15" y="6" size="1.27" layer="25">&gt;NAME</text>
+<text x="9" y="6" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="HV5W">
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="5V" x="-12.7" y="2.54" visible="pin" length="middle"/>
+<pin name="HV" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-10.16" visible="pin" length="middle" rot="R90"/>
+<text x="-7.62" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="2.54" y="-7.62" size="1.27" layer="96">&gt;VALUE</text>
+<pin name="EN" x="-12.7" y="0" visible="pin" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="HV5W">
+<gates>
+<gate name="G$1" symbol="HV5W" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HV5W-D">
+<connects>
+<connect gate="G$1" pin="5V" pad="+5V"/>
+<connect gate="G$1" pin="EN" pad="EN"/>
+<connect gate="G$1" pin="GND" pad="GND1 GND2 GND3"/>
+<connect gate="G$1" pin="HV" pad="HV"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10017,6 +10069,13 @@ DDEController.pdf</description>
 <part name="C24" library="rcl" deviceset="C-EU" device="C1210" value="100µF/6.3V"/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="GND42" library="supply1" deviceset="GND" device=""/>
+<part name="HV_MOD1" library="hv-mod" deviceset="HV5W" device=""/>
+<part name="HV_MOD2" library="hv-mod" deviceset="HV5W" device=""/>
+<part name="GND43" library="supply1" deviceset="GND" device=""/>
+<part name="GND44" library="supply1" deviceset="GND" device=""/>
+<part name="D1" library="diode" deviceset="ES2" device=""/>
+<part name="D4" library="diode" deviceset="ES2" device=""/>
+<part name="P+9" library="supply1" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10170,6 +10229,13 @@ DDEController.pdf</description>
 <instance part="C24" gate="G$1" x="497.84" y="96.52"/>
 <instance part="P+8" gate="1" x="497.84" y="104.14"/>
 <instance part="GND42" gate="1" x="497.84" y="86.36"/>
+<instance part="HV_MOD1" gate="G$1" x="304.8" y="43.18"/>
+<instance part="HV_MOD2" gate="G$1" x="304.8" y="17.78"/>
+<instance part="GND43" gate="1" x="304.8" y="5.08"/>
+<instance part="GND44" gate="1" x="304.8" y="30.48"/>
+<instance part="D1" gate="G$1" x="322.58" y="45.72"/>
+<instance part="D4" gate="G$1" x="322.58" y="20.32"/>
+<instance part="P+9" gate="1" x="289.56" y="53.34"/>
 </instances>
 <busses>
 </busses>
@@ -10459,6 +10525,14 @@ DDEController.pdf</description>
 <pinref part="GND42" gate="1" pin="GND"/>
 <wire x1="497.84" y1="91.44" x2="497.84" y2="88.9" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="HV_MOD2" gate="G$1" pin="GND"/>
+<pinref part="GND43" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="HV_MOD1" gate="G$1" pin="GND"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+5V" class="0">
 <segment>
@@ -10534,6 +10608,16 @@ DDEController.pdf</description>
 <pinref part="P+8" gate="1" pin="+5V"/>
 <pinref part="C24" gate="G$1" pin="1"/>
 <wire x1="497.84" y1="101.6" x2="497.84" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="HV_MOD2" gate="G$1" pin="5V"/>
+<wire x1="292.1" y1="20.32" x2="289.56" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="20.32" x2="289.56" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="HV_MOD1" gate="G$1" pin="5V"/>
+<wire x1="289.56" y1="45.72" x2="292.1" y2="45.72" width="0.1524" layer="91"/>
+<junction x="289.56" y="45.72"/>
+<wire x1="289.56" y1="45.72" x2="289.56" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="1" pin="+5V"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -10688,6 +10772,16 @@ DDEController.pdf</description>
 <pinref part="IC1" gate="MCU" pin="PB0"/>
 <wire x1="236.22" y1="127" x2="241.3" y2="127" width="0.1524" layer="91"/>
 <label x="241.3" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HV_MOD1" gate="G$1" pin="EN"/>
+<wire x1="292.1" y1="43.18" x2="287.02" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="43.18" x2="287.02" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="HV_MOD2" gate="G$1" pin="EN"/>
+<wire x1="287.02" y1="17.78" x2="292.1" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="43.18" x2="276.86" y2="43.18" width="0.1524" layer="91"/>
+<junction x="287.02" y="43.18"/>
+<label x="276.86" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -11197,6 +11291,16 @@ DDEController.pdf</description>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="106.68" y1="86.36" x2="114.3" y2="86.36" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="D4" gate="G$1" pin="C"/>
+<wire x1="325.12" y1="20.32" x2="335.28" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="20.32" x2="335.28" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="335.28" y1="45.72" x2="325.12" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="45.72" x2="340.36" y2="45.72" width="0.1524" layer="91"/>
+<junction x="335.28" y="45.72"/>
+<label x="340.36" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="NX_EN" class="0">
 <segment>
@@ -11362,6 +11466,20 @@ DDEController.pdf</description>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
 <wire x1="391.16" y1="86.36" x2="391.16" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="HV_MOD1" gate="G$1" pin="HV"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="317.5" y1="45.72" x2="320.04" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="HV_MOD2" gate="G$1" pin="HV"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="317.5" y1="20.32" x2="320.04" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
